@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      padding: 0%;
+      margin: 0%;
+    }
+
+    .container{
+      width: 100%;
+      height: 100%;
+      min-height: 595px;
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .social_links{
+      background-color: hsl(0, 0%, 12%);
+      height: 380px;
+      width:250px;
+      border-radius: 15px;
+
+    }
+    .firstpart{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* gap: 1rem; */
+
+
+    }
+    .profile{
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      transition: all 0.6s 0s;
+    
+    }
+    .profile:hover{
+      transform: scale(1.5);
+    }
+    .Name{
+      color:  hsl(0, 0%, 100%);
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1rem;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+    .Loc{
+      /* text-align: center; */
+      color: hsl(75, 94%, 57%);
+      font-family: "Inter", sans-serif ;
+      font-style: normal;
+      font-size: 0.6rem;
+      font-weight: 600;
+      padding-bottom: 10px;
+    }
+    .about{
+      font-family:"Inter", sans-serif ;
+      font-weight: 600;
+      font-style:italic;
+      font-size: 0.6rem;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      color: hsl(0, 0%, 100%);
+    }
+    @media screen and (max-width:376px) {
+      .social_links{
+        width: 220px;
+        height: 360px;
+        /* height:  ; */
+      }
+      
+    }
+    .platforms{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.6rem;
+
+    }
+    .Github{
+      color: hsl(0, 0%, 100%);
+      border: 1px solid black;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 0.7rem;
+      border-radius: 5px;
+      padding: 6px 80px;
+      border-style: none;
+      background-color: hsl(0, 0%, 20%);
+
+    }
+    .frontendmentor{
+
+      color: hsl(0, 0%, 100%);
+      border: 1px solid black;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 0.7rem;
+      border-radius: 5px;
+      padding: 6px 56px;
+      border-style: none;
+      background-color: hsl(0, 0%, 20%);
+    }
+    .twitter{
+      color: hsl(0, 0%, 100%);
+      border: 1px solid black;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 0.7rem;
+      border-radius: 5px;
+      padding: 6px 80px;
+      border-style: none;
+      background-color: hsl(0, 0%, 20%);
+
+    }
+    .Instagram{
+      color: hsl(0, 0%, 100%);
+      border: 1px solid black;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 0.7rem;
+      border-radius: 5px;
+      padding: 6px 71px;
+      border-style: none;
+      background-color: hsl(0, 0%, 20%);
+      transition-duration: 12ms;
+
+    }
+    .Linkedln{
+      color: hsl(0, 0%, 100%);
+      border: 1px solid black;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 0.7rem;
+      border-radius: 5px;
+      padding: 6px 75px;
+      border-style: none;
+      background-color: hsl(0, 0%, 20%);
+    }
+    a{
+      list-style: none;
+      text-decoration: none;
+    }
+    .Instagram:hover{
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 20%);
+    }
+    .twitter:hover{
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 20%);
+    }
+    .Linkedln:hover{
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 20%);
+    }    
+    .Github:hover{
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 20%);
+    }
+    .frontendmentor:hover{
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 20%);
+    }
+
+  </style>
+</head>
+<body>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sadiq</a>.
+  </div> -->
+  <div class="container">
+    <div class="social_links">
+      <div class="firstpart">
+
+        <img src="./assets/images/avatar-jessica.jpeg" alt="jessica" class="profile">
+        <h2 class="Name"> Jessica Randhell</h2>
+        <p class="Loc">London, United Kingdom</p>
+        <p class="about">"Front-end developer and avid reader"</p>
+      </div>
+      <div class="social">
+        <div class="platforms">
+          <a href="#Github"><h4 class="Github"> Github</h4></a>
+          <a href="#frontendmentor"><h4 class="frontendmentor"> frontendmentor</h4></a>
+          <a href="#Linkedln"><h4 class="Linkedln">Linkedln</h4></a>
+          <a href="#twitter"><h4 class="twitter">twitter</h4></a>
+          <a href="#instgram"><h4 class="Instagram">Instagram</h4></a>          
+          
+          
+          
+          
+
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</body>
+</html>
